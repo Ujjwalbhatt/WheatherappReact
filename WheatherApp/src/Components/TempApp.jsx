@@ -9,7 +9,7 @@ const TempApp = () => {
     useEffect(() => {
         const AxiosApi = async () => {
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=ae3e426845028aa48f96ec0eb64187cc`
-    
+
             try {
                 const response = await axios.get(url);
                 console.log(response.data.main);
